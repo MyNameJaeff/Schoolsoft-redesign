@@ -174,9 +174,33 @@ body, html{
     padding: 2%;
     border: 2px solid #ededed;
 }
+.närvaroTable{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
 .närvaroTable2{
     border-collapse: collapse;
+    border-spacing: 0;
     width: 100%;
+}
+td[rowspan="6"]{
+    text-align: start;
+    background:linear-gradient(0deg, #98db3bbf,#73b737);
+    border: 1px solid black;
+    text-align: center;
+}
+.närvaroTable>tbody>tr>td:first-child, .närvaroTable>tbody>tr>th{
+    border: 1px solid black;
+}
+.närvaroTable>tbody>tr>td:not(:first-child){
+    border-right: 1px solid black;
+}
+.närvaroTable>tbody>tr:last-child{
+    border-bottom: 1px solid black;
+}
+.närvaroTable>tbody>tr{
+    border-right: 1px solid black;
 }
 .närvaroTable2>tbody>tr{
     border-top: 1px solid black;
