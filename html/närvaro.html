@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Närvaro</title>
+  </head>
+  <body class="närvaro">
+    <nav>
+        <ul class ="sidebar">
+            <li onclick = hideSidebar()><a href = "#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </a></li>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "./html/närvaro.html">Skolinfo</a></li>
+            <li><a href = "./html/historia.html">Elevdokument</a></li>
+            <li><a href = "./html/resa_bokning.html">Kurser</a></li>
+            <li><a href = "./html/kontakt.html">Filer & Länkar</a></li>
+            <li><a href = "./html/kontakt.html">Min Profil</a></li>
+            
+
+        </ul>
+        <ul>
+            <li><h1>Schoolsoft</h1></li>
+            <li class ="hideOnMobile"><a href = "index.html">Home</a></li>
+            <li class ="hideOnMobile"><a href = "./html/närvaro.html">Skolinfo</a></li>
+            <li class ="hideOnMobile"><a href = "./html/historia.html">Elevdokument</a></li>
+            <li class ="hideOnMobile"><a href = "./html/resa_bokning.html">Kurser</a></li>
+            <li class ="hideOnMobile"><a href = "./html/kontakt.html">Filer & Länkar</a></li>
+            <li class ="hideOnMobile"><a href = "./html/kontakt.html">Min Profil</a></li>
+            <li class = "menu-button" onclick = showSidebar()><a href = "#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
+
+        </ul>
+        
+    </nav>
+    <main class="närvaroMain">
+      <div>
+        <div class="frånvaroMain">
+          <h2>FRÅNVAROANMÄLAN</h2>
+          <div class="frånvaroBox">
+            <div>
+              <img src="../img/calendar-clock.webp" class="calendarClock" />
+              <h3>Hel dags frånvaro v 37, 11 september - 15 september</h3>
+              <div>
+                <a href="#"><div title="Föregående vecka">&lt;</div></a>
+                <a href="#">Denna vecka</a>
+                <a href="#"><div title="Nästa vecka">&gt;</div></a>
+                <div id="weeksel-week" class="btn" href="">
+                  <form action="right_student_absence.jsp?type=day" method="post">
+                    <select name="termweek" onchange="this.form.submit();">
+                      <option value="27">v27</option>
+                      <option value="28">v28</option>
+                      <option value="29">v29</option>
+                      <option value="30">v30</option>
+                      <option value="31">v31</option>
+                      <option value="32">v32</option>
+                      <option value="33">v33</option>
+                      <option value="34">v34</option>
+                      <option value="35">v35</option>
+                      <option value="36">v36</option>
+                      <option value="37" selected="selected">v37</option>
+                      <option value="38">v38</option>
+                      <option value="39">v39</option>
+                      <option value="40">v40</option>
+                      <option value="41">v41</option>
+                      <option value="42">v42</option>
+                      <option value="43">v43</option>
+                      <option value="44">v44</option>
+                      <option value="45">v45</option>
+                      <option value="46">v46</option>
+                      <option value="47">v47</option>
+                      <option value="48">v48</option>
+                      <option value="49">v49</option>
+                      <option value="50">v50</option>
+                      <option value="51">v51</option>
+                      <option value="52">v52</option>
+                    </select>
+                  </form>
+                </div>
+                <a href="#">Calendar</a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <form>
+                  <div>
+                    <label for="">Anmäl</label>
+                  </div>
+                  <div>
+                    <div>
+                      <input
+                        type="radio"
+                        id="irday"
+                        name="type"
+                        value="day"
+                        checked="checked"
+                      />
+                      <label for="irday">Hel dags frånvaro</label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        id="irlesson"
+                        name="type"
+                        value="day"
+                        checked="none"
+                      />
+                      <label for="irlesson">Frånvaro från lektion</label>
+                    </div>
+                  </div>
+                </form>
+                <div class="frånvaroKnappar">
+                  <div>
+                    <p>Mån 11 sep</p>
+                    <button>Anmäl frånvaro</button>
+                  </div>
+                  <div>
+                    <p>Mån 11 sep</p>
+                    <button>Anmäl frånvaro</button>
+                  </div>
+                  <div>
+                    <p>Mån 11 sep</p>
+                    <button>Anmäl frånvaro</button>
+                  </div>
+                  <div>
+                    <p>Mån 11 sep</p>
+                    <button>Anmäl frånvaro</button>
+                  </div>
+                  <div>
+                    <p>Mån 11 sep</p>
+                    <button>Anmäl frånvaro</button>
+                  </div>
+                </div>
+              </div>
+              <div class="frånvaroTabell">
+                <p>Hel dags frånvaro</p>
+                <table>
+                  <tr>
+                    <th>Vecka</th>
+                    <th>Måndag</th>
+                    <th>Tisdag</th>
+                    <th>Onsdag</th>
+                    <th>Torsdag</th>
+                    <th>Fredag</th>
+                  </tr>
+                  <tr>
+                    <td>36</td>
+                    <td></td>
+                    <td>Föranmäld</td>
+                    <td>Föranmäld</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="frånvaroMain">
+          <h2>NÄRVARO</h2>
+          <div class="frånvaroBox">
+            <div>
+              <img src="../img/calendar-clock.webp" class="calendarClock" />
+              <h3>Närvaro v 37, 11 sep - 15 sep</h3>
+              <div>
+                <a href="#"><div title="Föregående vecka">&lt;</div></a>
+                <a href="#">Denna vecka</a>
+                <a href="#"><div title="Nästa vecka">&gt;</div></a>
+                <div id="weeksel-week" class="btn" href="">
+                  <form action="right_student_absence.jsp?type=day" method="post">
+                    <select name="termweek" onchange="this.form.submit();">
+                      <option value="27">v27</option>
+                      <option value="28">v28</option>
+                      <option value="29">v29</option>
+                      <option value="30">v30</option>
+                      <option value="31">v31</option>
+                      <option value="32">v32</option>
+                      <option value="33">v33</option>
+                      <option value="34">v34</option>
+                      <option value="35">v35</option>
+                      <option value="36">v36</option>
+                      <option value="37" selected="selected">v37</option>
+                      <option value="38">v38</option>
+                      <option value="39">v39</option>
+                      <option value="40">v40</option>
+                      <option value="41">v41</option>
+                      <option value="42">v42</option>
+                      <option value="43">v43</option>
+                      <option value="44">v44</option>
+                      <option value="45">v45</option>
+                      <option value="46">v46</option>
+                      <option value="47">v47</option>
+                      <option value="48">v48</option>
+                      <option value="49">v49</option>
+                      <option value="50">v50</option>
+                      <option value="51">v51</option>
+                      <option value="52">v52</option>
+                    </select>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div>
+              <table class="närvaroTable">
+                <tr>
+                    <th>Tid</th>
+                    <th>Mån</th>
+                    <th>Tis</th>
+                    <th>Ons</th>
+                    <th>Tor</th>
+                    <th>Fre</th>
+                </tr>
+                <tr>
+                    <td>8:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8:30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9:30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10:30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13:30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14:30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15:30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16:30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+              </table>
+              </div>
+              </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="frånvaroMain">
+          <h2>FRÅNVARO RAPPORT</h2>
+          <div class="frånvaroBox">
+            <div>
+              <img src="../img/calendar-clock.webp" class="calendarClock" />
+              <h3>Närvarorapport, Vecka 27 till 52</h3>
+            </div>
+            <div>
+                <table class="närvaroTable2">
+                    <tr>
+                        <th>Vecka</th>
+                        <th>Total närvaro</th>
+                        <th>Oanmäld frånvaro</th>
+                        <th>Anmäld frånvaro</th>
+                        <th>Närvaro</th>
+                        <th>Föranmäld</th>
+                    </tr>
+                    <tr>
+                        <td>v35</td>
+                        <td>10 st (100.0%)</td>
+                        <td>0 st (0.0%)</td>
+                        <td>0 st (0.0%)</td>
+                        <td>10 st</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>v36</td>
+                        <td>6 st (60.0%)</td>
+                        <td>0 st (0.0%)</td>
+                        <td>4 st (40.0%)</td>
+                        <td>6 st</td>
+                        <td>4 st</td>
+                    </tr>
+                    <tr>
+                        <td>v37</td>
+                        <td>4 st (66.7%)</td>
+                        <td>0 st (0.0%)</td>
+                        <td>2 st (33.3%)</td>
+                        <td>4 st</td>
+                        <td>2 st</td>
+                    </tr>
+                    <tr>
+                        <td>v27-v52</td>
+                        <td>20 st (76.9%)</td>
+                        <td>0 st (0.0%)</td>
+                        <td>6 st (23.1%)</td>
+                        <td>20 st</td>
+                        <td>6 st</td>
+                    </tr>
+                </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

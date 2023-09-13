@@ -2,10 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>FlyWithDan</title>
 </head>
-<body>
-    <h1>Hello world</h1>
+<body class ="body1">
+    <nav>
+        <ul class ="sidebar">
+            <li onclick = hideSidebar()><a href = "#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </a></li>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "./html/närvaro.html">Skolinfo</a></li>
+            <li><a href = "./html/historia.html">Elevdokument</a></li>
+            <li><a href = "./html/resa_bokning.html">Kurser</a></li>
+            <li><a href = "./html/kontakt.html">Filer & Länkar</a></li>
+            <li><a href = "./html/kontakt.html">Min Profil</a></li>
+            
+
+        </ul>
+        <ul>
+            <li><h1>Schoolsoft</h1></li>
+            <li class ="hideOnMobile"><a href = "index.html">Home</a></li>
+            <li class ="hideOnMobile"><a href = "./html/närvaro.html">Skolinfo</a></li>
+            <li class ="hideOnMobile"><a href = "./html/historia.html">Elevdokument</a></li>
+            <li class ="hideOnMobile"><a href = "./html/resa_bokning.html">Kurser</a></li>
+            <li class ="hideOnMobile"><a href = "./html/kontakt.html">Filer & Länkar</a></li>
+            <li class ="hideOnMobile"><a href = "./html/kontakt.html">Min Profil</a></li>
+            <li class = "menu-button" onclick = showSidebar()><a href = "#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
+
+        </ul>
+        
+    </nav>
+
+    
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+</script>
 </body>
 </html>
