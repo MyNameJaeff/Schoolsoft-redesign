@@ -74,7 +74,7 @@
           </div>
         </div>
       </li>
-      <li onclick=showProfilebar()><a href="#">Profil</a></li>
+      <li><a onclick=showProfilebar()>Profil</a></li>
     </ul>
     <ul>
       <li>
@@ -139,22 +139,18 @@
       <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
             viewBox="0 -960 960 960" width="26">
             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-          </svg></a>
-      </li>
-      <ul class="profilebar">
-        <li onclick=hideProfilebar()><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960"
-            width="26">
-            <path
-              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-          </svg>
-          <h2>Profil</h2>
-        </li>
-        <li><a href="">Min Profil</a></li>
-        <li><a href="">Meddelanden</a></li>
-        <li><a href="">Logga ut</a></li>
-      </ul>
+          </svg></a></li>
+    </ul>
+    <ul class="profilebar">
+      <li onclick=hideProfilebar()><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960"
+          width="26">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg></li>
+      <li><a href="">Min Profil</a></li>
+      <li><a href="">Meddelanden</a></li>
+      <li><a href="">Logga ut</a></li>
+    </ul>
   </nav>
-
   <div class="parent">
     <div class="div1"><a class="changelink" href="#">
         <h1>Lunch</h1>
@@ -171,52 +167,57 @@
         <h1>Betyg</h1>
       </a></div>
   </div>
-
   <div class="trainingcardbox">
     <div class="container">
       <div class="card">
         <div class="box">
           <div class="content">
-            <h2 class="change">Lunch</h2>
-            <a class="changelink" href="biceps_easy.html">Learn more</a>
+            <a href="#">
+              <h2 class="change">Lunch</h2>
+            </a>
+            <!-- <a class = "changelink" href = "biceps_easy.html">Learn more</a> -->
           </div>
         </div>
       </div>
     </div>
-
     <div class="container2">
       <div class="card2">
         <div class="box2">
           <div class="content2">
-            <h2 class="change">Nyheter</h2>
-            <a class="changelink" href="triceps_easy.html">Learn more</a>
+            <a href="#">
+              <h2 class="change">Nyheter</h2>
+            </a>
+            <!-- <a  class ="changelink" href = "triceps_easy.html">Learn more</a> -->
           </div>
         </div>
       </div>
     </div>
-
     <div class="container3">
       <div class="card3">
         <div class="box3">
           <div class="content3">
-            <h2 class="change">Schema</h2>
-            <a class="changelink" href="chest_easy.html">Learn more</a>
+            <a href="#">
+              <h2 class="change">Schema</h2>
+            </a>
+            <!-- <a class ="changelink" href = "chest_easy.html">Learn more</a> -->
           </div>
         </div>
       </div>
     </div>
-
     <div class="container4">
       <div class="card4">
         <div class="box4">
           <div class="content4">
-            <h2 class="change">Betyg</h2>
-            <a class="changelink" href="back_easy.html">Learn more</a>
+            <a href="#">
+              <h2 class="change">Betyg</h2>
+            </a>
+            <!-- <a class ="changelink" href = "back_easy.html">Learn more</a> -->
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <script src="javascript/script.js"></script>
 </body>
-<script src="../javascript/script.js"></script>
 
 </html>

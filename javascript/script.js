@@ -1,19 +1,19 @@
-function showSidebar() {
+function showSidebar(){
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'flex'
 }
 
-function hideSidebar() {
+function hideSidebar(){
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'none'
 }
 
-function showProfilebar() {
+function showProfilebar(){
     const sidebar = document.querySelector('.profilebar')
     sidebar.style.display = 'flex'
 }
 
-function hideProfilebar() {
+function hideProfilebar(){
     const sidebar = document.querySelector('.profilebar')
     sidebar.style.display = 'none'
 }

@@ -54,7 +54,7 @@ a[href=""]:not([class="profil"]){
     }
 
     .närvaroMain>div:nth-child(3)>.frånvaroMain {
-        padding-bottom: 1%;
+        padding-bottom: 3%;
     }
 
     .frånvaroMain {
