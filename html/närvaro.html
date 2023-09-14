@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/mobilStyle.css">
+  <link rel="icon" href="../img/sadge.psd.webp">
   <title>Närvaro</title>
 </head>
 
@@ -130,7 +131,7 @@
           </div>
         </div>
       </li>
-      <li class="hideOnMobile" class="menu-button2" onclick="showProfilebar(); return false;">
+      <li class="hideOnMobile menu-button2" onclick="showProfilebar(); return false;">
         <a href="#">Profil</a>
         <!-- <div class="dropdown">
                   <button class="dropbtn">Profil</button>
@@ -162,7 +163,7 @@
       <div class="frånvaroMain">
         <h2>FRÅNVAROANMÄLAN</h2>
         <div class="frånvaroBox">
-          <div>
+          <div class="specialBox">
             <img src="../img/calendar-clock.webp" class="calendarClock" />
             <h3>Hel dags frånvaro v 37, 11 september - 15 september</h3>
             <div>
@@ -250,7 +251,7 @@
             </div>
             <div class="frånvaroTabell">
               <p>Hel dags frånvaro</p>
-              <table>
+              <table class="desktopShown">
                 <tr>
                   <th>Vecka</th>
                   <th>Måndag</th>
@@ -268,6 +269,46 @@
                   <td></td>
                 </tr>
               </table>
+              <dl class="desktopHidden">
+                <select name="termweek">
+                  <option value="27">v27</option>
+                  <option value="28">v28</option>
+                  <option value="29">v29</option>
+                  <option value="30">v30</option>
+                  <option value="31">v31</option>
+                  <option value="32">v32</option>
+                  <option value="33">v33</option>
+                  <option value="34">v34</option>
+                  <option value="35">v35</option>
+                  <option value="36">v36</option>
+                  <option value="37" selected="selected">v37</option>
+                  <option value="38">v38</option>
+                  <option value="39">v39</option>
+                  <option value="40">v40</option>
+                  <option value="41">v41</option>
+                  <option value="42">v42</option>
+                  <option value="43">v43</option>
+                  <option value="44">v44</option>
+                  <option value="45">v45</option>
+                  <option value="46">v46</option>
+                  <option value="47">v47</option>
+                  <option value="48">v48</option>
+                  <option value="49">v49</option>
+                  <option value="50">v50</option>
+                  <option value="51">v51</option>
+                  <option value="52">v52</option>
+                </select>
+                <dt>Måndag</dt>
+                <dd>- </dd>
+                <dt>Tisdag</dt>
+                <dd>- Föranmäld</dd>
+                <dt>Onsdag</dt>
+                <dd>- Föranmäld</dd>
+                <dt>Torsdag</dt>
+                <dd>- </dd>
+                <dt>Fredag</dt>
+                <dd>- </dd>
+              </dl>
             </div>
           </div>
         </div>
@@ -324,10 +365,17 @@
             </div>
           </div>
           <div>
+            <div class="buttonBox desktopHidden">
+              <button>Mån</button>
+              <button>Tis</button>
+              <button>Ons</button>
+              <button>Tor</button>
+              <button>Fre</button>
+            </div>
             <table class="närvaroTable">
               <tr>
                 <th>Tid</th>
-                <th>Mån</th>
+                <th class="open">Mån</th>
                 <th>Tis</th>
                 <th>Ons</th>
                 <th>Tor</th>
@@ -335,7 +383,7 @@
               </tr>
               <tr>
                 <td>8:00</td>
-                <td></td>
+                <td class="open"></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -343,7 +391,7 @@
               </tr>
               <tr>
                 <td>8:30</td>
-                <td></td>
+                <td class="open"></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -351,7 +399,7 @@
               </tr>
               <tr>
                 <td>9:00</td>
-                <td rowspan="6">Gymnasieingenjör</td>
+                <td rowspan="6" class="open">Gymnasieingenjör</td>
                 <td rowspan="6">Gymnasieingenjör</td>
                 <td rowspan="6">Gymnasieingenjör</td>
                 <td rowspan="6">Gymnasieingenjör</td>
@@ -374,21 +422,21 @@
               </tr>
               <tr>
                 <td>12:00</td>
-                <td></td>
+                <td class="open"></td>
                 <td></td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
                 <td>12:30</td>
-                <td></td>
+                <td class="open"></td>
                 <td></td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
                 <td>13:00</td>
-                <td rowspan="6">Gymnasieingenjör</td>
+                <td rowspan="6" class="open">Gymnasieingenjör</td>
                 <td rowspan="6">Gymnasieingenjör</td>
                 <td rowspan="6">Gymnasieingenjör</td>
                 <td rowspan="6">Gymnasieingenjör</td>
@@ -411,14 +459,14 @@
               </tr>
               <tr>
                 <td>16:00</td>
-                <td></td>
+                <td class="open"></td>
                 <td></td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
                 <td>16:30</td>
-                <td></td>
+                <td class="open"></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -483,7 +531,6 @@
         </div>
       </div>
   </main>
+  <script src="../javascript/script.js"></script>
 </body>
-<script src="../javascript/script.js"></script>
-
 </html>

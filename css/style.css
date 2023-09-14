@@ -7,6 +7,7 @@ a[href=""]:not([class="profil"]){
     background-color: rgba(211, 211, 211, 0.455);
     pointer-events:none;
 }
+
 .body1 {
     min-height: 100vh;
     /* background-image: url(../img/gor-dasvtyan-a0nX79KYqNo-unsplash.jpg);
@@ -555,7 +556,7 @@ nav li:first-child{
         background-color: #fbfbf7;
     }
 
-    .frånvaroBox>div>div:nth-child(1) {
+    .frånvaroBox>div:nth-child(1)>div:nth-child(1) {
         background-color: #f7f7f7;
         border: #dbdbdb 2px solid;
         border-radius: 0.3vw;
@@ -662,10 +663,47 @@ nav li:first-child{
     dt {
         font-size: 1.8vw;
     }
-
+    .desktopHidden{
+        display: none;
+    }
     /* Slut av fredrik kod*/
 }
 
     /* Schema skit */
+.ahh{
+    display: flex;
+    justify-content: center;
+}
+
+.dinmamma{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.schemahead{
+    display: flex;
+    padding: 5px;
+}
+
+.schematable{
+    margin-top: 5px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+.schematable th{
+    padding: 0% 1%;
+}
+
+.schematr{
+    border: 1px solid black;
+    display: flex;
+}
+
+.tablehead{
+    border: 1px solid black;
+    font-size: 300%;
+}
+
 
     /* Schema skit sl*/
