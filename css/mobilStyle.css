@@ -81,8 +81,7 @@
     .frånvaroMain{
         height: 100%;
         border: 1px solid black;
-        padding: 1%;
-        padding-bottom: 0%;
+        padding: 2%;
     }
     .frånvaroBox{
         margin-top: 2%;
