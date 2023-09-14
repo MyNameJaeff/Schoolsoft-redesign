@@ -1,0 +1,225 @@
+@media (max-width:600px){
+    /* Fredriks jätte bra kod 10/10 */
+    *{
+        margin:0;
+        padding: 0;
+    }
+    .lunchMain{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 0.5fr 5fr 0.5fr;
+        grid-template-rows: 0.5fr 5fr 0.5fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }    
+    .lunchMain>div { grid-area: 2 / 2 / 3 / 3; }   
+    dt {
+        font-weight: bold;
+    }
+    dl,
+    dd {
+        font-size: 0.9rem;
+    }
+    dd{
+        border-bottom: 1px solid black;
+        margin-bottom: 4vh;
+        margin-left: 2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 1%;
+    }
+    dd>div{
+        display: flex;
+        width: 40%;
+        margin-bottom: 2vh;
+        margin-right: 10%;
+        align-self: flex-end;
+        justify-content: space-around;
+    }
+    dd>div>img{
+        width: 4vh;
+    }
+    dd,dt{
+        font-size: 2.9vh;
+    }
+    .närvaro>main{
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1%;
+    }
+    .närvaro>main>div:first-child{
+        margin-top: 3%
+    };
+    .närvaro>main>div:not(:first-child){
+        margin-top: 5%;
+    }
+    .närvaro>main>div:last-child{
+        padding-bottom: 5%;
+    }
+    .närvaroMain{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .närvaroMain button:hover, a:hover{
+        background-color: turquoise;
+    }
+    .närvaroMain > div{
+        width: 90%;
+        padding-left: 5%;
+        height: 100%;
+    }
+    .närvaroMain>div:nth-child(3){
+        height: 44vh;
+    }
+    .närvaroMain>div:nth-child(3)>.frånvaroMain{
+        padding-bottom: 1%;
+    }
+    .frånvaroMain{
+        height: 100%;
+        border: 1px solid black;
+        padding: 1%;
+        padding-bottom: 0%;
+    }
+    .frånvaroBox{
+        margin-top: 2%;
+        height: 75%;
+    }
+    .frånvaroMain>h2{
+        border-bottom: 0.2em solid black;
+        padding: 0% 1%;
+        padding-top: 1%;
+        font-size: 2vh;
+    }
+    .calendarClock{
+        width: 10%;
+    }
+    .frånvaroBox>div:nth-child(1){
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #efefe9;
+        font-size: 4vw;
+        padding: 1%;
+    }
+    .frånvaroBox>div:nth-child(1)>h3{
+        width: 70%;
+        margin-left: 5%;
+    }
+    .frånvaroBox>div:nth-child(1)>div{
+        margin-left: 11%;
+        margin-top: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+    }
+    .frånvaroBox>div:nth-child(1)>div>a{
+        color: black;
+        text-decoration: none;
+        font-size: 4.2vw;
+    }
+    .frånvaroBox>div:nth-child(2){
+        padding: 2%;
+        border: 2px solid #ededed;
+    }
+    .närvaroTable{
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+    }
+    .närvaroTable2{
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+    }
+    td[rowspan="6"]{
+        text-align: start;
+        background:linear-gradient(0deg, #98db3bbf,#73b737);
+        border: 1px solid black;
+        text-align: center;
+    }
+    .närvaroTable>tbody>tr>td:first-child, .närvaroTable>tbody>tr>th{
+        border: 1px solid black;
+    }
+    .närvaroTable>tbody>tr>td:not(:first-child){
+        border-right: 1px solid black;
+    }
+    .närvaroTable>tbody>tr:last-child{
+        border-bottom: 1px solid black;
+    }
+    .närvaroTable>tbody>tr{
+        border-right: 1px solid black;
+    }
+    .närvaroTable2>tbody>tr{
+        border-top: 1px solid black;
+    }
+    .närvaroTable2>tbody>tr:not(:first-child):hover{
+        background-color: rgba(0, 0, 0, 0.101);
+    }
+    .närvaroTable2>tbody>tr:last-child{
+        border-bottom: 1px solid black;
+    }
+    .närvaroTable2>tbody>tr>td, .närvaroTable2>tbody>tr>th{
+        padding: 1%;
+    }
+    .närvaroTable2>tbody>:nth-child(odd){
+        background-color: #fbfbf7;
+    }
+    
+    .frånvaroBox>div>div:nth-child(1){
+        background-color: #f7f7f7;
+        border: #dbdbdb 2px solid;
+        border-radius: 0.3vw;
+        padding: 3%;
+        height: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .frånvaroBox>div>div:nth-child(1)>form{
+        display: flex;
+        justify-content: space-around;
+    }
+    .frånvaroBox>div>div:nth-child(1)>form>div{
+        font-size: 1vw;
+    }
+    .frånvaroKnappar{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        font-size: 1.2vw;
+        padding: 4% 0%;
+    }
+    .frånvaroKnappar > div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .frånvaroKnappar > div > button{
+        font-size: 1vw;
+        padding: 4%;
+    }
+    .frånvaroTabell{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2vw;
+        margin-top: 6%;
+    }
+    .frånvaroTabell>table{
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    .frånvaroTabell>table>tbody>tr>th, .frånvaroTabell>table>tbody>tr>td{
+        border: 1px solid black;
+        padding: 0.5%;
+        text-align: center;
+        font-size: 1.2vw;
+    }
+    /* End of the best code ever*/
+}

@@ -2,10 +2,14 @@
     margin:0;
     padding: 0;
 }
-
+a[href=""]:not([class="profil"]){
+    cursor: no-drop;
+    background-color: rgba(211, 211, 211, 0.455);
+    pointer-events:none;
+}
 .body1 {
     min-height: 100vh;
-    /* background-image: url(../img/gor-davtyan-a0nX79KYqNo-unsplash.jpg);
+    /* background-image: url(../img/gor-dasvtyan-a0nX79KYqNo-unsplash.jpg);
     background-repeat:no-repeat;
     background-position: center;
     background-size: cover; */
@@ -23,10 +27,14 @@ nav ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    /* margin-right: 10%; */
+
 }
 
 nav li{
     height: 50px;
+    /* margin-right: 3.5%; */
+
 }
 
 nav h1{
@@ -44,13 +52,15 @@ nav a{
 
 }
 
-nav a:hover{
+nav a:not([href=""]):hover{
     background-color: rgb(252, 249, 249);
+    /* display: block; */
 }
 
 nav li:first-child{
     margin-right: auto;
 }
+
 
 .sidebar{
     position: fixed;
@@ -80,7 +90,7 @@ nav li:first-child{
 }
 
 
-@media(max-width: 800px){
+@media(max-width: 900px){
     .hideOnMobile{
         display: none;
     }
@@ -95,179 +105,567 @@ nav li:first-child{
     }
 }
 
-/* Fredrik Kod */
-body, html{
-    width: 100%;
-    height: 100%;
-}
-.närvaro{
-    display: flex;
-    flex-direction: column;
-}
-.närvaro>main{
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 1%;
-}
-.närvaro>main>div:not(:first-child){
-    margin-top: 5%;
-}
-.närvaro>main>div:last-child{
-    padding-bottom: 5%;
-}
-.närvaroMain{
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-}
-.närvaroMain > div{
-    width: 100%;
-    height: 100%;
-}
-.närvaroMain>div:nth-child(3){
-    height: 44vh;
-}
-.närvaroMain>div:nth-child(3)>.frånvaroMain{
-    padding-bottom: 1%;
-}
-.frånvaroMain{
-    height: 100%;
-    border: 1px solid black;
-    padding: 1%;
-    padding-bottom: 0%;
-}
-.frånvaroBox{
-    margin-top: 2%;
-    height: 75%;
-}
-.frånvaroMain>h2{
-    border-bottom: 0.2em solid black;
-    padding: 0% 1%;
-    padding-top: 1%;
-    font-size: 1.4vw;
-}
-.calendarClock{
-    width: 4%;
-}
-.frånvaroBox>div:nth-child(1){
-    display: flex;
-    align-items: center;
-    background-color: #efefe9;
-    font-size: 1vw;
-    padding: 1%;
-}
-.frånvaroBox>div:nth-child(1)>div{
-    margin-left: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 30%;
-}
-.frånvaroBox>div:nth-child(1)>div>a{
+.dropbtn {
+  
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+    /* margin-right: 10%; */
+
+
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    /* min-width: 107px; */
+
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 107px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
     color: black;
+    padding: 12px 16px;
     text-decoration: none;
-    font-size: 1.2vw;
-}
-.frånvaroBox>div:nth-child(2){
-    padding: 2%;
-    border: 2px solid #ededed;
-}
-.närvaroTable{
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-}
-.närvaroTable2{
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-}
-td[rowspan="6"]{
-    text-align: start;
-    background:linear-gradient(0deg, #98db3bbf,#73b737);
-    border: 1px solid black;
-    text-align: center;
-}
-.närvaroTable>tbody>tr>td:first-child, .närvaroTable>tbody>tr>th{
-    border: 1px solid black;
-}
-.närvaroTable>tbody>tr>td:not(:first-child){
-    border-right: 1px solid black;
-}
-.närvaroTable>tbody>tr:last-child{
-    border-bottom: 1px solid black;
-}
-.närvaroTable>tbody>tr{
-    border-right: 1px solid black;
-}
-.närvaroTable2>tbody>tr{
-    border-top: 1px solid black;
-}
-.närvaroTable2>tbody>tr:not(:first-child):hover{
-    background-color: rgba(0, 0, 0, 0.101);
-}
-.närvaroTable2>tbody>tr:last-child{
-    border-bottom: 1px solid black;
-}
-.närvaroTable2>tbody>tr>td, .närvaroTable2>tbody>tr>th{
-    padding: 1%;
-}
-.närvaroTable2>tbody>:nth-child(odd){
-    background-color: #fbfbf7;
+    display: block;
+  }
+  
+  .dropdown-content a:not([href=""]):hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    background-color:white;
+
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: whitesmoke;
+    /* min-width: 107px; */
+
+  }
+
+  .profilebar{
+    position: fixed;
+    margin-top: 2.8%;
+    top: 0;
+    right: 0;
+    height: 25vh;
+    width:250px;
+    z-index:999;
+    background-color: white;
+    /* filter: blur(10px); */
+    box-shadow: -10px 0 10px black;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
-.frånvaroBox>div>div:nth-child(1){
-    background-color: #f7f7f7;
-    border: #dbdbdb 2px solid;
-    border-radius: 0.3vw;
-    padding: 3%;
-    height: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.frånvaroBox>div>div:nth-child(1)>form{
-    display: flex;
-    justify-content: space-around;
-}
-.frånvaroBox>div>div:nth-child(1)>form>div{
-    font-size: 1vw;
-}
-.frånvaroKnappar{
-    display: flex;
+.profilebar li{
     width: 100%;
-    justify-content: space-around;
-    font-size: 1.2vw;
-    padding: 4% 0%;
 }
-.frånvaroKnappar > div{
+.profilebar a{
     width: 100%;
+}
+
+.menu-button2{
+    display: none;
+}
+
+
+@media(max-width: 900px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button2{
+        display: block;
+    }
+}
+
+@media(max-width: 400px){
+    .profilebar{
+        width:100%
+    }
+}
+
+.trainingcardbox {
+    width: 99.6vw;
+    /*background-color:  #333;*/
+    /*background-color: rgb(15, 14, 14);*/
+    /*margin-left: 15%;*/
+    border-radius: 20px;
+    padding-bottom: 5%;
+    /* padding-left: -4%; */
+    padding-top: 5%;
+    position: relative;
+    margin-top: 1%;
+    /* border: 3px solid blue; */
+    /* border: 3px solid blue; */
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    gap: 40px;
+    margin-top: 5vh;
+    height: 70vh;
+    flex-direction:row;
     align-items: center;
-}
-.frånvaroKnappar > div > button{
-    font-size: 1vw;
-    padding: 4%;
-}
-.frånvaroTabell{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2vw;
-    margin-top: 6%;
-}
-.frånvaroTabell>table{
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-.frånvaroTabell>table>tbody>tr>th, .frånvaroTabell>table>tbody>tr>td{
-    border: 1px solid black;
-    padding: 0.5%;
-    text-align: center;
-    font-size: 1.2vw;
+    align-content: center;
+    justify-content:space-around;
+  
+  
+  }
+
+  @media(max-width: 800px){
+    .trainingcardbox{
+        display: flex;
+        flex-direction: row;
+        width: 59.6vw;
+        justify-content:flex-end;
+        margin-top: 60%;
+        align-items: center;
+        align-content: center;
+        margin-left: 15%;
+
+
+    }
 }
 
-/* Slut av fredrik kod*/
+@media(max-width: 790px){
+    .trainingcardbox{
+        display: flex;
+        flex-direction: row;
+        width: 59.6vw;
+        justify-content:flex-end;
+        margin-top: 70%;
+        align-items: center;
+        align-content: center;
+        margin-left: 15%;
+
+
+    }
+}
+
+@media(max-width: 680px){
+    .trainingcardbox{
+        display: flex;
+        flex-direction: row;
+        width: 59.6vw;
+        justify-content:flex-end;
+        margin-top: 80%;
+        align-items: center;
+        align-content: center;
+        margin-left: 15%;
+
+
+    }
+}
+
+@media(max-width: 610px){
+    .trainingcardbox{
+        display: flex;
+        flex-direction: row;
+        width: 59.6vw;
+        justify-content:flex-end;
+        margin-top: 90%;
+        align-items: center;
+        align-content: center;
+        margin-left: 15%;
+
+
+    }
+}
+
+@media(max-width: 545px){
+    .trainingcardbox{
+        display: flex;
+        flex-direction: row;
+        width: 59.6vw;
+        justify-content:flex-end;
+        margin-top: 100%;
+        align-items: center;
+        align-content: center;
+        margin-left: 15%;
+
+
+    }
+}
+
+@media(max-width: 510px){
+    .trainingcardbox{
+        display: flex;
+        flex-direction: row;
+        width: 59.6vw;
+        justify-content:flex-end;
+        margin-top: 105%;
+        align-items: center;
+        align-content: center;
+        margin-left: 20%;
+
+
+    }
+}
+
+@media(max-width: 475px){
+    .trainingcardbox{
+        display: flex;
+        flex-direction: row;
+        width: 59.6vw;
+        justify-content:flex-end;
+        margin-top: 115%;
+        align-items: center;
+        align-content: center;
+        margin-left: 25%;
+
+
+    }
+}
+
+@media(max-width: 435px){
+    .trainingcardbox{
+        display: flex;
+        flex-direction: row;
+        width: 59.6vw;
+        justify-content:flex-end;
+        margin-top: 125%;
+        align-items: center;
+        align-content: center;
+        margin-left: 27%;
+
+
+    }
+}
+
+@media(max-width: 405px){
+    .trainingcardbox{
+        display: flex;
+        flex-direction: row;
+        width: 59.6vw;
+        justify-content:flex-end;
+        margin-top: 135%;
+        align-items: center;
+        align-content: center;
+        margin-left: 29%;
+
+
+    }
+}
+
+/* <--------------------iPhone SE starts here----------------------> */
+/* @media(max-width: 375px){
+    .trainingcardbox{
+        display: flex;
+        flex-direction: row;
+        width: 59.6vw;
+        justify-content:flex-end;
+        margin-top: 145%;
+        align-items: center;
+        align-content: center;
+        margin-left: 33%;
+
+
+    }
+} */
+
+/* <--------------------iPhone SE ends here----------------------> */
+
+/* <--------------------iPhone XR starts here----------------------> */
+
+
+/* @media(max-width: 414px) {
+    .trainingcardbox{
+        display: flex;
+        flex-direction: row;
+        width: 59.6vw;
+        justify-content:flex-end;
+        margin-top: 135%;
+        align-items: center;
+        align-content: center;
+        margin-left: 33%;
+
+
+    }
+} */
+/* <--------------------iPhone XR ends here----------------------> */
+@media (min-width:600px){
+    /* Fredrik Kod */
+    body,
+    html {
+        width: 100%;
+        height: 100%;
+    }
+
+    .närvaro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .närvaro>main {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1%;
+    }
+
+    .närvaro>main>div:not(:first-child) {
+        margin-top: 5%;
+    }
+
+    .närvaro>main>div:last-child {
+        padding-bottom: 5%;
+    }
+
+    .närvaroMain {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+    }
+
+    .närvaroMain button:hover,
+    .frånvaroBox>div>div>a:hover {
+        background-color: turquoise;
+    }
+
+    .närvaroMain>div {
+        width: 100%;
+        height: 100%;
+    }
+
+    .närvaroMain>div:nth-child(3) {
+        height: 44vh;
+    }
+
+    .närvaroMain>div:nth-child(3)>.frånvaroMain {
+        padding-bottom: 1%;
+    }
+
+    .frånvaroMain {
+        height: 100%;
+        border: 1px solid black;
+        padding: 1%;
+        padding-bottom: 0%;
+    }
+
+    .frånvaroBox {
+        margin-top: 2%;
+        height: 75%;
+    }
+
+    .frånvaroMain>h2 {
+        border-bottom: 0.2em solid black;
+        padding: 0% 1%;
+        padding-top: 1%;
+        font-size: 1.4vw;
+    }
+
+    .calendarClock {
+        width: 4%;
+    }
+
+    .frånvaroBox>div:nth-child(1) {
+        display: flex;
+        align-items: center;
+        background-color: #efefe9;
+        font-size: 1vw;
+        padding: 1%;
+    }
+
+    .frånvaroBox>div:nth-child(1)>div {
+        margin-left: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 30%;
+    }
+
+    .frånvaroBox>div:nth-child(1)>div>a {
+        color: black;
+        text-decoration: none;
+        font-size: 1.2vw;
+    }
+
+    .frånvaroBox>div:nth-child(2) {
+        padding: 2%;
+        border: 2px solid #ededed;
+    }
+
+    .närvaroTable {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+    }
+
+    .närvaroTable2 {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+    }
+
+    td[rowspan="6"] {
+        text-align: start;
+        background: linear-gradient(0deg, #98db3bbf, #73b737);
+        border: 1px solid black;
+        text-align: center;
+    }
+
+    .närvaroTable>tbody>tr>td:first-child,
+    .närvaroTable>tbody>tr>th {
+        border: 1px solid black;
+    }
+
+    .närvaroTable>tbody>tr>td:not(:first-child) {
+        border-right: 1px solid black;
+    }
+
+    .närvaroTable>tbody>tr:last-child {
+        border-bottom: 1px solid black;
+    }
+
+    .närvaroTable>tbody>tr {
+        border-right: 1px solid black;
+    }
+
+    .närvaroTable2>tbody>tr {
+        border-top: 1px solid black;
+    }
+
+    .närvaroTable2>tbody>tr:not(:first-child):hover {
+        background-color: rgba(0, 0, 0, 0.101);
+    }
+
+    .närvaroTable2>tbody>tr:last-child {
+        border-bottom: 1px solid black;
+    }
+
+    .närvaroTable2>tbody>tr>td,
+    .närvaroTable2>tbody>tr>th {
+        padding: 1%;
+    }
+
+    .närvaroTable2>tbody>:nth-child(odd) {
+        background-color: #fbfbf7;
+    }
+
+    .frånvaroBox>div>div:nth-child(1) {
+        background-color: #f7f7f7;
+        border: #dbdbdb 2px solid;
+        border-radius: 0.3vw;
+        padding: 3%;
+        height: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .frånvaroBox>div>div:nth-child(1)>form {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .frånvaroBox>div>div:nth-child(1)>form>div {
+        font-size: 1vw;
+    }
+
+    .frånvaroKnappar {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        font-size: 1.2vw;
+        padding: 4% 0%;
+    }
+
+    .frånvaroKnappar>div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .frånvaroKnappar>div>button {
+        font-size: 1vw;
+        padding: 4%;
+    }
+
+    .frånvaroTabell {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2vw;
+        margin-top: 6%;
+    }
+
+    .frånvaroTabell>table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    .frånvaroTabell>table>tbody>tr>th,
+    .frånvaroTabell>table>tbody>tr>td {
+        border: 1px solid black;
+        padding: 0.5%;
+        text-align: center;
+        font-size: 1.2vw;
+    }
+
+    .lunchMain {
+        height: 90%;
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-rows: 1fr 5fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .lunchMain>div {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    dt {
+        font-weight: bold;
+    }
+
+    dl,
+    dd {
+        font-size: 0.9rem;
+    }
+
+    dd {
+        border-bottom: 1px solid black;
+        margin-bottom: 1.5em;
+        margin-left: 2%;
+        display: flex;
+        align-items: center;
+    }
+
+    dd>div {
+        display: flex;
+        width: 30%;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 1%;
+    }
+
+    dd>div>img {
+        width: 12%;
+    }
+
+    dd,
+    dt {
+        font-size: 1.8vw;
+    }
+
+    /* Slut av fredrik kod*/
+}
+
+    /* Schema skit */
+
+    /* Schema skit sl*/
