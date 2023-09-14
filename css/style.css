@@ -687,7 +687,7 @@ nav li:first-child{
 
 .schematable{
     margin-top: 5px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     justify-content: center;
 }
@@ -696,12 +696,12 @@ nav li:first-child{
 }
 
 .schematr{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
 }
 
 .tablehead{
-    border: 1px solid black;
+    border: 2px solid black;
     font-size: 300%;
 }
 
