@@ -51,7 +51,7 @@
     }
     .närvaro>main>div:first-child{
         margin-top: 3%
-    };
+    }
     .närvaro>main>div:not(:first-child){
         margin-top: 5%;
     }
@@ -125,16 +125,18 @@
         padding: 2%;
         border: 2px solid #ededed;
     }
-    .närvaroTable{
+    .närvaroTable, .schemaTabell{
         border-collapse: collapse;
         border-spacing: 0;
         width: 100%;
     }
     
-    .närvaroTable>tbody>tr>th:not(.open):not(:first-child){
+    .närvaroTable>tbody>tr>th:not(.open):not(:first-child),
+    .schemaTabell>tbody>tr>th:not(.open):not(:first-child){
         display: none;
     }
-    .närvaroTable>tbody>tr>td:not(.open):not(:first-child){
+    .närvaroTable>tbody>tr>td:not(.open):not(:first-child),
+    .schemaTabell>tbody>tr>td:not(.open):not(:first-child){
         display: none;
     }
     .närvaroTable2{
@@ -148,25 +150,49 @@
         flex-direction: column;
         flex-wrap: wrap;
     }
-    td[rowspan="6"]{
+    .närvaroTable>tbody>tr>td[rowspan="6"]{
         text-align: start;
         background:linear-gradient(0deg, #98db3bbf,#73b737);
         border: 1px solid black;
         text-align: center;
     }
-    .närvaroTable>tbody>tr>td:first-child, .närvaroTable>tbody>tr>th{
+    .schemaTabell>tbody>tr>td[rowspan="6"]{
+        text-align: start;
+        background:linear-gradient(0deg, white,white);
+        border: 1px solid black;
+        text-align: center;
+    }
+    .schemaTabell>tbody>tr>td:not(:first-child), .schemaTabell>tbody>tr>td:not(:first-child){
+        background-color: lightgray;
+    }
+    .frånvaroMain {
+        height: 100%;
+        border: 1px solid black;
+        padding: 1%;
+        margin: 1%;
+        margin-top: 2%;
+        background-color: white;
+        border-radius: 1%;
+        box-shadow: 3px 3px 6px dimgray
+    }
+    .närvaroTable>tbody>tr>td:first-child, .närvaroTable>tbody>tr>th,
+    .schemaTabell>tbody>tr>td:first-child, .schemaTabell>tbody>tr>th{
         border: 1px solid black;
     }
-    .närvaroTable>tbody>tr>td:not(:first-child){
+    .närvaroTable>tbody>tr>td:not(:first-child),
+    .schemaTabell>tbody>tr>td:not(:first-child){
         border-right: 1px solid black;
     }
-    .närvaroTable>tbody>tr:last-child{
+    .närvaroTable>tbody>tr:last-child,
+    .schemaTabell>tbody>tr:last-child{
         border-bottom: 1px solid black;
     }
-    .närvaroTable>tbody>tr{
+    .närvaroTable>tbody>tr,
+    .schemaTabell>tbody>tr{
         border-right: 1px solid black;
     }
-    .närvaroTable>tbody>tr>td, .närvaroTable>tbody>tr>th{
+    .närvaroTable>tbody>tr>td, .närvaroTable>tbody>tr>th,
+    .schemaTabell>tbody>tr>td, .schemaTabell>tbody>tr>th{
         padding: 1%;
         font-size: 5.5vw;
     }

@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
 }
-
 .body1 {
   min-height: 100vh;
   /* background-image: url(../img/gor-davtyan-a0nX79KYqNo-unsplash.jpg);
@@ -521,7 +520,6 @@ nav li:first-child {
 
 
 .container .card .box .content .change {
-  position: center;
   top: 10px;
   right: 45px;
   font-size: 4em;
@@ -540,7 +538,7 @@ nav li:first-child {
   font-size: 1.8em;
   color: grey;
   z-index: 1;
-  transition: 0.5;
+  transition: 0.5s;
 }
 
 .container .card .box .content .changetext {
@@ -646,7 +644,6 @@ nav li:first-child {
 
 
 .container2 .card2 .box2 .content2 .change {
-  position: center;
   top: 10px;
   right: 45px;
   font-size: 4em;
@@ -665,7 +662,7 @@ nav li:first-child {
   font-size: 1.8em;
   color: grey;
   z-index: 1;
-  transition: 0.5;
+  transition: 0.5s;
 }
 
 .container2 .card2 .box2 .content2 .changetext {
@@ -767,7 +764,6 @@ nav li:first-child {
 
 
 .container3 .card3 .box3 .content3 .change {
-  position: center;
   top: 10px;
   right: 45px;
   font-size: 4em;
@@ -785,7 +781,7 @@ nav li:first-child {
   font-size: 1.8em;
   color: grey;
   z-index: 1;
-  transition: 0.5;
+  transition: 0.5s;
 }
 
 .container3 .card3 .box3 .content3 .changetext {
@@ -884,7 +880,6 @@ nav li:first-child {
 
 
 .container4 .card4 .box4 .content4 .change {
-  position: center;
   top: 10px;
   right: 45px;
   font-size: 4em;
@@ -902,7 +897,7 @@ nav li:first-child {
   font-size: 1.8em;
   color: grey;
   z-index: 1;
-  transition: 0.5;
+  transition: 0.5s;
 }
 
 .container4 .card4 .box4 .content4 .changetext {
@@ -1076,7 +1071,7 @@ nav li:first-child {
 
 }
 
-@media(max-width: 880px) {
+@media (max-width: 880px) {
   .parent {
     display: none;
   }
@@ -1088,23 +1083,23 @@ nav li:first-child {
   }
 }
 
-@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {}
+@media only screen and (width: 390px) and (height: 844px) and (-webkit-device-pixel-ratio: 3) {}
 
-@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {}
+@media only screen and (width: 428px) and (height: 926px) and (-webkit-device-pixel-ratio: 3) {}
 
 
 
 /* ----------- iPad Pro 12.9" ----------- */
 
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {}
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {}
 
 /* Portrait */
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}
+@media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}
 
 /* Landscape */
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {}
+@media only screen and (min-width: 1366px) and (max-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {}

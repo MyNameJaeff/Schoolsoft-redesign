@@ -60,7 +60,10 @@ a[href=""]:not([class="profil"]){
     .frånvaroMain {
         height: 100%;
         border: 1px solid black;
-        padding: 1%;
+        padding-top: 1%;
+        background-color: white;
+        border-radius: 1%;
+        box-shadow: 3px 3px 6px dimgray
     }
 
     .frånvaroBox {
@@ -106,10 +109,13 @@ a[href=""]:not([class="profil"]){
         border: 2px solid #ededed;
     }
 
-    .närvaroTable {
+    .närvaroTable, .schemaTabell {
         border-collapse: collapse;
         border-spacing: 0;
         width: 100%;
+    }
+    .schemaTabell>tbody>tr>td:not(:first-child), .schemaTabell>tbody>tr>td:not(:first-child){
+        background-color: lightgray;
     }
 
     .närvaroTable2 {
@@ -118,27 +124,38 @@ a[href=""]:not([class="profil"]){
         width: 100%;
     }
 
-    td[rowspan="6"] {
+    .närvaroTable>tbody>tr>td[rowspan="6"] {
         text-align: start;
         background: linear-gradient(0deg, #98db3bbf, #73b737);
         border: 1px solid black;
         text-align: center;
     }
+    .schemaTabell>tbody>tr>td[rowspan="6"] {
+        text-align: start;
+        background: linear-gradient(0deg, white, white);
+        border: 1px solid black;
+        text-align: center;
+    }
 
     .närvaroTable>tbody>tr>td:first-child,
-    .närvaroTable>tbody>tr>th {
+    .närvaroTable>tbody>tr>th,
+    .schemaTabell>tbody>tr>td:first-child,
+    .schemaTabell>tbody>tr>th{
         border: 1px solid black;
     }
 
-    .närvaroTable>tbody>tr>td:not(:first-child) {
+    .närvaroTable>tbody>tr>td:not(:first-child),
+    .schemaTabell>tbody>tr>td:not(:first-child) {
         border-right: 1px solid black;
     }
 
-    .närvaroTable>tbody>tr:last-child {
+    .närvaroTable>tbody>tr:last-child,
+    .schemaTabell>tbody>tr:last-child{
         border-bottom: 1px solid black;
     }
 
-    .närvaroTable>tbody>tr {
+    .närvaroTable>tbody>tr, 
+    .närvaroTable>tbody>tr{
         border-right: 1px solid black;
     }
 
@@ -280,37 +297,9 @@ a[href=""]:not([class="profil"]){
 .ahh{
     display: flex;
     justify-content: center;
+    margin-top: 1%;
 }
-
-.dinmamma{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.schemahead{
-    display: flex;
-    padding: 5px;
-}
-
-.schematable{
-    margin-top: 5px;
-    /* border: 2px solid black; */
-    display: flex;
-    justify-content: center;
-}
-.schematable th{
-    padding: 0% 1%;
-}
-
-.schematr{
-    /* border: 1px solid black; */
-    display: flex;
-}
-
-.tablehead{
-    border: 2px solid black;
-    font-size: 300%;
-}
-
 
     /* Schema skit sl*/
+
+ 
