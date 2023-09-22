@@ -9,6 +9,7 @@
   ![image](https://github.com/MyNameJaeff/Schoolsoft-redesign/assets/90324303/051e48c9-bf9c-472d-b6d4-cc3a23d29c4d)
 
 ## Navbar
+The navbar from the original schoolsoft had a vertical form navbar which also were aligned to the left part of the webpage. The navigation containes eight dropdown with links in it were each had their own categories. But some of the categories were unnecessarily added because for example their were one dropdown category that had just one link on it and could have belonged to the other dropdowns instead. Some other dropdowns had links to different pages that could have been on the same page instead. In our redisgn we made the navbar instead horizontal, decreased the amounts of dropdowns and moved the remaining links to the dropdown categories we believed it belongs better to and we made some of the links into a common page.
 
 ## Main-page
 
