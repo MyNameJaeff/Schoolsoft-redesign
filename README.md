@@ -14,6 +14,11 @@
 
 ## Schedule
   An issue we had with Schoolsoft's design was the fact that they put the links for schedules, calendars, bookings/reservations and the exam schedule all on different web pages under a drop-down title called schedule. Our vision was to condense these similar web pages onto a single page for easier access to similar information without users having to constantly switch between tabs or pages.
+  The first image shows how it looks on Schoolsoft while the second and third show how we have redesigned the page.
+  
+  <img width="1440" alt="image" src="https://github.com/MyNameJaeff/Schoolsoft-redesign/assets/72451911/8ea61f49-f45a-4823-b81d-6c8e40f8ed33">
+  <img width="1440" alt="image" src="https://github.com/MyNameJaeff/Schoolsoft-redesign/assets/72451911/a4a7b089-e44f-47e8-ba23-ef52c706851c">
+  <img width="1440" alt="image" src="https://github.com/MyNameJaeff/Schoolsoft-redesign/assets/72451911/7b45d4d9-e1ea-4a48-a28b-e177e95de195">
 
 ## Lunch Table
   Schoolsoft did not have a page for viewing the current food being served in the school so we chose to add it as a page in schoolsoft because its one of the most **desired** pages for students, where we also added the possibility to add 
