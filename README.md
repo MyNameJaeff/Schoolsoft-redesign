@@ -13,6 +13,7 @@
 ## Main-page
 
 ## Schedule
+  An issue we had with Schoolsoft's design was the fact that they put the links for schedules, calendars, bookings/reservations and the exam schedule all on different web pages under a drop-down title called schedule. Our vision was to condense these similar web pages onto a single page for easier access to similar information without users having to constantly switch between tabs or pages.
 
 ## Lunch Table
   Schoolsoft did not have a page for viewing the current food being served in the school so we chose to add it as a page in schoolsoft because its one of the most desired pages for students, where we also added the possibility to add 
