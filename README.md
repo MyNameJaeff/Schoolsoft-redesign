@@ -1,5 +1,5 @@
 # Schoolsoft-redesign
-
+This was a project that 4 people (Fredrik, Hider, Daniel, Viktor) sat and worked on during year 4 at NTI Södertörn. The purpose of the project was to pick a website that we felt we could improve the design of.
 
 ## Why Schoolsoft?
   We chose to redesign schoolsoft because we disliked their user friendliness and design, due to them * *almost* * not having **ANY** responsive design at all (Image 1 is on 100% laptop screen, Image2 is on large TV).
